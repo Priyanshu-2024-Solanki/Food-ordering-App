@@ -54,7 +54,7 @@ const Body = () => {
 
   return (
     <div className="body">
-      <div className="filter flex justify-center">
+      <div className="filter sm:max-md:flex-col md:max-2xl:flex">
         <div className="search m-4 p-4">
           <input
             data-testid="searchInput"

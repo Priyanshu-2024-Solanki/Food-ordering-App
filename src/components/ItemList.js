@@ -45,6 +45,11 @@ const ItemList = ({ items }) => {
   );
 };
 
+function randomNumber()
+{
+  return Math.floor(Math.random()*100000000);
+}
+
 export const WithoutAddButton = ({ items }) => {
   const dispatch = useDispatch();
   const handleRemoveClick = (index) => {
@@ -55,7 +60,7 @@ export const WithoutAddButton = ({ items }) => {
     <div>
       {items.map((item,index) => (
         <div
-          key={item?.card?.info?.id}
+          key={randomNumber()}
           className="p-2 m-2 border-gray-200 border-b-2 text-left flex justify-between"
         >
           <div className="w-9/12">
